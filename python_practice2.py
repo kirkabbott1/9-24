@@ -37,14 +37,25 @@
 # # Print a Triangle
 # print (" " * 2) + ("*" * 3) + (" " * 2)
 # print (" ") + ("*" * 5) + (" ")
-# print ("*" * 7)
-nStars = 1
-nBlanks = 6
+# # print ("*" * 7)
+# nStars = 1
+# nBlanks = h + 6
+#
+# for currentnum in range(0,4):
+#     print (" " * (nBlanks / 2)) + ("*" * nStars) + (" " * (nBlanks / 2))
+#     nBlanks -= 2
+#     nStars += 2
 
-counter = 1
-for space in range(0,4):
+# Print a Triangle II
+#
+# Given a number as the height, print a triangle as in "Print a Triangle" but with the given height.
+
+h = int(raw_input("height?"))
+nStars = 1
+nBlanks = h + 111
+
+
+for currentnum in range(0, h):
     print (" " * (nBlanks / 2)) + ("*" * nStars) + (" " * (nBlanks / 2))
-    counter += 1
-    if counter > 0:
-        nBlanks -= 2
-        nStars += 2
+    nBlanks -= 2
+    nStars += 2
