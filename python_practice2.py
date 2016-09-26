@@ -50,12 +50,31 @@
 #
 # Given a number as the height, print a triangle as in "Print a Triangle" but with the given height.
 
-h = int(raw_input("height?"))
-nStars = 1
-nBlanks = h + 111
-
-
-for currentnum in range(0, h):
-    print (" " * (nBlanks / 2)) + ("*" * nStars) + (" " * (nBlanks / 2))
-    nBlanks -= 2
-    nStars += 2
+# h = int(raw_input("height?"))
+#
+# #
+# # for currentnum in range(0, h):
+# #     print (" " * (nBlanks / 2)) + ("*" * nStars) + (" " * (nBlanks / 2))
+# #     nBlanks -= 2
+# #     nStars += 2
+#
+# for row_num in range(h):
+#     base_w = 2 * h -1
+#     num_stars = (row_num * 2) + 1
+#     num_spaces = (base_w - num_stars) / 2
+#     spaces = " " * num_spaces
+#     stars = "*" * num_stars
+#     print spaces + stars
+# h = int(raw_input("height?"))
+length = str(raw_input("width?"))
+print length
+w = len(length)
+print w
+for i in range(w):
+    if (i == 0):
+        print "*" * (w + 2)
+    if (i == 1):
+        print "*" + (length) + "*"
+    if (i == 2):
+        print "*" * (w + 2)
+        break
